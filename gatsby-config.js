@@ -3,9 +3,10 @@ module.exports = {
     title: 'Gatsby Default Starter',
   },
   plugins: [
+    'gatsby-plugin-eslint',
     'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-plugin-manifest`, // eslint-disable-line
       options: {
         name: 'gatsby-starter-default',
         short_name: 'starter',
