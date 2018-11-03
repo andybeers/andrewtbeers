@@ -1,0 +1,19 @@
+a {
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: dotted 2px cyan;
+  border-top: dotted 2px cyan;
+}
+
+a:hover::before {
+  content: '<~~ ';
+  color: fuchsia;
+}
+
+a:hover::after {
+  content: ' ~~>';
+  color: fuchsia;
+}
