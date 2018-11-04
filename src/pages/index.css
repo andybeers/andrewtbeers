@@ -23,7 +23,7 @@ a:hover::after {
 .block-container {
   display: flex;
   flex-wrap: wrap;
-  height: 45px;
+  height: 40px;
   overflow: hidden;
 }
 

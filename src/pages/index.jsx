@@ -5,14 +5,17 @@ import helloPhoto from '../images/hellothere.png'
 import Layout from '../components/layout'
 import './index.css'
 
-const blocks = Array(10).fill()
+// TODO: Ideally this would use the array spread operator:
+// [...Array(10).keys()]
+// But Gatsby's webpack settings are barfing on it
+const blocks = Array.from(Array(10).keys())
+const newBlocks = [...blocks, ...blocks, ...blocks]
 
 const IndexPage = () => (
   <Layout>
     <div className="block-container">
-      {blocks.map((block, idx) => (
-        /* eslint-disable-next-line */
-        <div key={idx} className={`block color-${idx}`} />
+      {newBlocks.map(block => (
+        <div key={block} className={`block color-${block}`} />
       ))}
     </div>
     <h1>Andrew Beers</h1>
