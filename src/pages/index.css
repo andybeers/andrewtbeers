@@ -1,0 +1,63 @@
+a {
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: dotted 2px cyan;
+  border-top: dotted 2px cyan;
+}
+
+a:hover::after {
+  content: ' ~~>';
+  color: fuchsia;
+}
+
+.block {
+  height: 30px;
+  width: 30px;
+  margin: 0.25em;
+  background: black;
+}
+
+.block-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 40px;
+  overflow: hidden;
+}
+
+.color-0 {
+  background: fuchsia;
+}
+.color-1 {
+  background: mediumspringgreen;
+}
+.color-2 {
+  background: aqua;
+}
+.color-3 {
+  background: chartreuse;
+}
+.color-4 {
+  background: deeppink;
+}
+.color-5 {
+  background: aquamarine;
+}
+.color-6 {
+  background: violet;
+}
+.color-7 {
+  background: #fdfa85;
+}
+.color-8 {
+  background: orangered;
+}
+.color-9 {
+  background: hotpink;
+}
+
+h2 {
+  margin: 0.15em;
+}
