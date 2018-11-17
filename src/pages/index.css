@@ -57,3 +57,7 @@ a:hover::after {
 .color-9 {
   background: hotpink;
 }
+
+h2 {
+  margin: 0.15em;
+}
