@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Andrew Beers',
   },
   plugins: [
     'gatsby-plugin-eslint',
