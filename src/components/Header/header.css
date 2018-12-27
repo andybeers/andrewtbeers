@@ -1,0 +1,58 @@
+/* header.css */
+
+.block-container {
+  display: flex;
+  align-items: center;
+  margin: 0.25em;
+  flex-wrap: wrap;
+  height: 40px;
+  overflow: hidden;
+}
+
+.header-divider {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.block {
+  height: 30px;
+  width: 30px;
+  margin: 0.25em;
+  background: black;
+  box-shadow: 1px 1px 2px 0px gray;
+}
+
+.color-0 {
+  background: fuchsia;
+}
+.color-1 {
+  background: mediumspringgreen;
+}
+.color-2 {
+  background: aqua;
+}
+.color-3 {
+  background: chartreuse;
+}
+.color-4 {
+  background: deeppink;
+}
+.color-5 {
+  background: aquamarine;
+}
+.color-6 {
+  background: violet;
+}
+.color-7 {
+  background: #fdfa85;
+}
+.color-8 {
+  background: orangered;
+}
+.color-9 {
+  background: hotpink;
+}
+
+.header-name {
+  margin: 0 0.2em;
+}

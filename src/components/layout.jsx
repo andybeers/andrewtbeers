@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from './header'
+import Header from './Header'
+import Navigation from './Navigation'
 import './layout.css'
 
 const Layout = ({ children }) => (
@@ -28,16 +29,27 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+        <Header />
         <div
           style={{
             margin: '0 auto',
-            maxWidth: 960,
+            maxWidth: 800,
             padding: '0px 1.0875rem 1.45rem',
             paddingTop: 0,
           }}
         >
-          {children}
+          <div
+            style={{
+              display: 'flex',
+            }}
+          >
+            <div>{children}</div>
+            <Navigation
+              style={{
+                align: 'flex-end',
+              }}
+            />
+          </div>
         </div>
       </Fragment>
     )}
